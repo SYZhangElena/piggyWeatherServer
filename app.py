@@ -38,6 +38,8 @@ def main():
     global server
 
     server = tornado.httpserver.HTTPServer(application, xheaders=True)
+    logging.info(options.port)
+    logging.info(options.address)
     server.bind(options.port, options.address)
     server.start(0)
 

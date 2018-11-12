@@ -1,6 +1,6 @@
 [base]
 PORT = 9999
-IPADDR = 134.175.58.86
+IPADDR = 172.16.0.13
 MATRIX_CACHE_DIR = "/home/sar/codes/piggyWeather/system/cache"
 MATRIX_PRIVDATA_DIR = "/home/sar/codes/piggyWeather/system/privdata"
 MATRIX_APPLOGS_DIR = "/home/sar/codes/piggyWeather/system/applogs"

@@ -16,7 +16,7 @@ class BaseHandler(tornado.web.RequestHandler):
 #            raise tornado.web.HTTPError(403)
 
     def set_default_headers(self):
-        self.set_header("Server", "Lianjia")
+        self.set_header("Server", "PiggyWeather")
         self.set_header("Access-Control-Allow-Origin", "*")
         self.set_header("Access-Control-Allow-Headers", "x-requested-with, content-type")
         self.set_header("Access-Control-Allow-Methods", "POST, GET, OPTIONS")

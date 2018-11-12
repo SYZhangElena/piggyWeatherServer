@@ -4,10 +4,11 @@ import sqlite3
 from sqlite3 import Error
 import logging
 
-#from settings import settings
+from settings import settings
 
-#DATABASE = settings['config']['sqlite']['MATRIX_DB_FILE']
-DATABASE = '/home/eric/SarKerson/pythonthon/piggyServer/piggyWeather.db'
+config = settings['config']
+DATABASE = config.get('sqlite', 'MATRIX_DB_FILE').strip('""')
+#DATABASE = '/home/eric/SarKerson/pythonthon/piggyServer/piggyWeather.db'
 
 def create_connection(db_file):
     """ create a database connection to the SQLite database
@@ -40,7 +41,7 @@ def get_cities_by_province(province):
 
 def main():
     conn = create_connection(DATABASE)
-    r = get_cities_by_province('北京')
+    r = get_cities_by_province('beijing')
     print(r)
     with conn:
         cur = conn.cursor()

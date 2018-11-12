@@ -10,11 +10,16 @@ class ProvinceHandler(BaseHandler):
 
     def get(self, province):
         try:
+#            province = province.encode('utf-8')
             cities = db.get_cities_by_province(province)
         except Exception as why:
             logging.error(why)
-            self.write([])
+            self.write({
+                'cities': []
+            })
             return
         else:
             logging.info(cities)
-            self.write(cities)
+            self.write({
+                'cities': cities
+            })
