@@ -25,8 +25,8 @@ class SignupHandler(BaseHandler):
             self.write(res)
             return
 
-        res = db.insert_user(params['username'], params['passwd'])
-        if res:
+        ret = db.insert_user(params['username'], params['passwd'])
+        if ret:
             res['retcode'] = 0
             self.write(res)
         else:
