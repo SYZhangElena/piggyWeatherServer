@@ -115,6 +115,10 @@ def insert_user(username, passwd):
     conn = create_connection(DATABASE)
     with conn:
         cur = conn.cursor()
+        cur.execute("SELECT * FROM user WHERE username=?", (username,))
+        t = cur.fetchone()
+        if t:
+            return None
         cur.execute("INSERT INTO user (username, passwd) VALUES (?, ?)", (username, passwd,))
     return cur.lastrowid
 

@@ -63,7 +63,7 @@ class LikedCityInsertHandler(BaseHandler):
         except Exception as why:
             logging.error(why)
         else:
-            res['retcode'] = 1
+            res['retcode'] = 0
 
         self.write(res)
 
