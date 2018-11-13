@@ -101,13 +101,13 @@ def get_passwd_by_username(username):
     conn = create_connection(DATABASE)
     with conn:
         cur = conn.cursor()
-        cur.execute("SELECT passwd FROM user WHERE username = ?", (username,))
+        cur.execute("SELECT passwd FROM user WHERE username=?", (username,))
         row = cur.fetchone()
-    logging.log(row)
-    if row:
-        return row[0]
-    else:
+    logging.info(row)
+    if not row:
         return None
+    else:
+        return row[0]
 
 
 @trace
@@ -148,7 +148,8 @@ def get_user_list():
 
 
 if __name__ == '__main__':
-    res = insert_user('heihei', 'heiheiheihei')
-    print(res)
-    print(get_user_list())
-    print(get_cities_by_username('zhangshuyu'))
+#    res = insert_user('heihei', 'heiheiheihei')
+#    print(res)
+#    print(get_user_list())
+#    print(get_cities_by_username('zhangshuyu'))
+    print(get_passwd_by_username('zhangshuyu'))
