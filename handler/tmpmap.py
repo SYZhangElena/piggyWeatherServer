@@ -15,8 +15,10 @@ class TmpMapHandler(BaseHandler):
     def get(self):
         # http://pi.weather.com.cn/i/product/share/pic/l/PWCP_TWC_WEAP_S99_ETO_TWC_L88_P9_20181113090000000.JPG
         now = datetime.datetime.now()
+        if now.hour < 2:
+            now = now + datetime.timedelta(hours=-(now.hour + 1))
         postfix = now.strftime('%Y%m%d%H0000000')
-        url = '{0}/{1}.JPG'.format(self.BASE_URL, postfix)
+        url = '{0}{1}.JPG'.format(self.BASE_URL, postfix)
         self.write({
             'imgs': [url]
         })
