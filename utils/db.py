@@ -137,6 +137,29 @@ def insert_liked_city(username, city_cn):
 
 
 @trace
+def insert_email_city(email, username, city_cn):
+    city_id = get_cityid_by_citycn(city_cn)
+    if not city_id:
+        logging.info('No such city found: {0}'.format(city_cn))
+        return None
+    conn = create_connection(DATABASE)
+    with conn:
+        cur = conn.cursor()
+        cur.execute("INSERT INTO likedcities (email, username, city_id) VALUES (?, ?, ?)", (email, username, city_id))
+    return cur.lastrowid
+
+
+@trace
+def get_all_email_city_list():
+    conn = create_connection(DATABASE)
+    with conn:
+        cur = conn.cursor()
+        cur.execute("SELECT DISTINCT * FROM cityemail")
+        rows = cur.fetchall()
+    return rows
+
+
+@trace
 def get_user_list():
     conn = create_connection(DATABASE)
     with conn:
