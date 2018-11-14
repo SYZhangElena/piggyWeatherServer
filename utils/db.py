@@ -7,13 +7,13 @@ import traceback
 from io import StringIO
 import os
 
-from settings import settings
+#from settings import settings
 
-config = settings['config']
-DATABASE = config.get('sqlite', 'MATRIX_DB_FILE').strip('""')
+#config = settings['config']
+#DATABASE = config.get('sqlite', 'MATRIX_DB_FILE').strip('""')
 
-#DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-#DATABASE = os.path.join(DIR, 'piggyWeather.db')
+DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+DATABASE = os.path.join(DIR, 'piggyWeather.db')
 
 def trace(f):
     def _trace(*args, **kwargs):
@@ -22,7 +22,7 @@ def trace(f):
         except:
             fp = StringIO()
             traceback.print_exc(file=fp)
-            logging.error(fp.getvalue())
+            logging.exception(fp.getvalue())
             res = None
         return res
     return _trace
@@ -144,10 +144,11 @@ def insert_email_city(email, username, city_cn):
     if not city_id:
         logging.info('No such city found: {0}'.format(city_cn))
         return None
+    logging.info('get city_id: {0}'.format(city_id))
     conn = create_connection(DATABASE)
     with conn:
         cur = conn.cursor()
-        cur.execute("INSERT INTO likedcities (email, username, city_id) VALUES (?, ?, ?)", (email, username, city_id))
+        cur.execute("INSERT INTO cityemail (email, username, city_id) VALUES (?, ?, ?)", (email, username, city_id,))
     return cur.lastrowid
 
 
