@@ -17,6 +17,8 @@ class TmpMapHandler(BaseHandler):
         now = datetime.datetime.now()
         if now.hour < 2:
             now = now + datetime.timedelta(hours=-(now.hour + 1))
+        else:
+            now = now + datetime.timedelta(hours=-2)
         postfix = now.strftime('%Y%m%d%H0000000')
         url = '{0}{1}.JPG'.format(self.BASE_URL, postfix)
         self.write({

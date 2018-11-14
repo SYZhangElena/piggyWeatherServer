@@ -5,13 +5,15 @@ from sqlite3 import Error
 import logging
 import traceback
 from io import StringIO
+import os
 
-#from settings import settings
+from settings import settings
 
-#config = settings['config']
-#DATABASE = config.get('sqlite', 'MATRIX_DB_FILE').strip('""')
+config = settings['config']
+DATABASE = config.get('sqlite', 'MATRIX_DB_FILE').strip('""')
 
-DATABASE = '/home/eric/SarKerson/pythonthon/piggyServer/piggyWeather.db'
+#DIR = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+#DATABASE = os.path.join(DIR, 'piggyWeather.db')
 
 def trace(f):
     def _trace(*args, **kwargs):
@@ -179,4 +181,6 @@ if __name__ == '__main__':
 #    print(res)
 #    print(get_user_list())
 #    print(get_cities_by_username('zhangshuyu'))
-    print(get_passwd_by_username('zhangshuyu'))
+#    print(get_passwd_by_username('zhangshuyu'))
+    print(DATABASE)
+    print(get_all_email_city_list())
