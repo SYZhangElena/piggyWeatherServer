@@ -6,12 +6,12 @@ import logging
 import traceback
 from io import StringIO
 
-from settings import settings
+#from settings import settings
 
-config = settings['config']
-DATABASE = config.get('sqlite', 'MATRIX_DB_FILE').strip('""')
+#config = settings['config']
+#DATABASE = config.get('sqlite', 'MATRIX_DB_FILE').strip('""')
 
-#DATABASE = '/home/eric/SarKerson/pythonthon/piggyServer/piggyWeather.db'
+DATABASE = '/home/eric/SarKerson/pythonthon/piggyServer/piggyWeather.db'
 
 def trace(f):
     def _trace(*args, **kwargs):
