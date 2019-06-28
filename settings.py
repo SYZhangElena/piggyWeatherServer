@@ -4,7 +4,7 @@ import sys
 import os
 import time
 import logging
-import ConfigParser
+import configparser
 import yaml
 import tornado
 from tornado.options import define, options
@@ -15,7 +15,7 @@ sys.path.append(os.path.join(ROOT, 'utils/'))
 sys.path.append(os.path.join(ROOT, 'handler/'))
 
 cfg = "{0}/config/MATRIX_ENV_CONF".format(ROOT)
-config = ConfigParser.ConfigParser()
+config = configparser.ConfigParser()
 config.readfp(open(cfg))
 
 

@@ -1,10 +1,10 @@
 [base]
 PORT = 9999
-IPADDR = 172.16.0.13
-MATRIX_CACHE_DIR = "/home/sar/codes/piggyWeather/system/cache"
-MATRIX_PRIVDATA_DIR = "/home/sar/codes/piggyWeather/system/privdata"
-MATRIX_APPLOGS_DIR = "/home/sar/codes/piggyWeather/system/applogs"
-MATRIX_ACCESSLOGS_DIR = "/home/sar/codes/piggyWeather/system/logs"
+IPADDR = 127.0.0.1
+MATRIX_CACHE_DIR = "/home/elena/codes/piggyWeatherServer/system/cache"
+MATRIX_PRIVDATA_DIR = "/home/elena/codes/piggyWeatherServer/system/privdata"
+MATRIX_APPLOGS_DIR = "/home/elena/codes/piggyWeatherServer/system/applogs"
+MATRIX_ACCESSLOGS_DIR = "/home/elena/codes/piggyWeatherServer/system/logs"
 
 [sqlite]
-MATRIX_DB_FILE = "/home/sar/codes/piggyWeather/piggyWeather.db"
+MATRIX_DB_FILE = "/home/elena/codes/piggyWeatherServer/piggyWeatherServer.db"
