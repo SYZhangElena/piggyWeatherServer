@@ -7,4 +7,4 @@ MATRIX_APPLOGS_DIR = "/home/elena/codes/piggyWeatherServer/system/applogs"
 MATRIX_ACCESSLOGS_DIR = "/home/elena/codes/piggyWeatherServer/system/logs"
 
 [sqlite]
-MATRIX_DB_FILE = "/home/elena/codes/piggyWeatherServer/piggyWeatherServer.db"
+MATRIX_DB_FILE = "/home/elena/codes/piggyWeatherServer/piggyWeather.db"

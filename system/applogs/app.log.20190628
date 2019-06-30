@@ -20,3 +20,66 @@
 2019/06/28 20:43:37|INFO|10623|child 3 (pid 10627) exited normally
 2019/06/28 20:43:37|INFO|10623|child 2 (pid 10626) exited normally
 2019/06/28 20:43:37|INFO|10623|child 0 (pid 10624) exited normally
+2019/06/28 21:29:37|INFO|10906|9999
+2019/06/28 21:29:37|INFO|10906|127.0.0.1
+2019/06/28 21:29:37|INFO|10906|Starting 4 processes
+2019/06/28 21:33:03|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:33:03|INFO|10907|b'{"username":"admin","passwd":"admin"}'
+2019/06/28 21:33:03|INFO|10907|None
+2019/06/28 21:33:03|INFO|10907|200 POST /login (127.0.0.1) 34.74ms
+2019/06/28 21:33:07|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:33:07|INFO|10907|b'{"username":"admin","passwd":"admin"}'
+2019/06/28 21:33:07|INFO|10907|None
+2019/06/28 21:33:07|INFO|10907|200 POST /login (127.0.0.1) 2.25ms
+2019/06/28 21:33:22|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:33:22|INFO|10907|b'{"username":"admin","passwd":"admin"}'
+2019/06/28 21:33:22|INFO|10907|None
+2019/06/28 21:33:22|INFO|10907|200 POST /login (127.0.0.1) 5.30ms
+2019/06/28 21:33:28|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:33:28|INFO|10907|b'{"username":"admin","passwd":"admin"}'
+2019/06/28 21:33:28|INFO|10907|200 POST /signup (127.0.0.1) 36.99ms
+2019/06/28 21:33:29|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:33:29|INFO|10907|b'{"username":"admin"}'
+2019/06/28 21:33:29|INFO|10907|[]
+2019/06/28 21:33:29|INFO|10907|200 POST /username/city (127.0.0.1) 2.98ms
+2019/06/28 21:33:47|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:33:47|INFO|10907|200 GET /tmp/map/now (127.0.0.1) 50.02ms
+2019/06/28 21:34:02|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:34:02|INFO|10907|[('beijing',), ('haidian',), ('chaoyang',), ('shunyi',), ('huairou',), ('tongzhou',), ('changping',), ('yanqing',), ('fengtai',), ('shijingshan',), ('daxing',), ('fangshan',), ('miyun',), ('mentougou',), ('pinggu',), ('dongcheng',), ('xicheng',)]
+2019/06/28 21:34:02|INFO|10907|['beijing', 'haidian', 'chaoyang', 'shunyi', 'huairou', 'tongzhou', 'changping', 'yanqing', 'fengtai', 'shijingshan', 'daxing', 'fangshan', 'miyun', 'mentougou', 'pinggu', 'dongcheng', 'xicheng']
+2019/06/28 21:34:02|INFO|10907|200 GET /province/%E5%8C%97%E4%BA%AC (127.0.0.1) 7.05ms
+2019/06/28 21:34:02|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:34:02|INFO|10907|[('beijing',), ('haidian',), ('chaoyang',), ('shunyi',), ('huairou',), ('tongzhou',), ('changping',), ('yanqing',), ('fengtai',), ('shijingshan',), ('daxing',), ('fangshan',), ('miyun',), ('mentougou',), ('pinggu',), ('dongcheng',), ('xicheng',)]
+2019/06/28 21:34:02|INFO|10907|['beijing', 'haidian', 'chaoyang', 'shunyi', 'huairou', 'tongzhou', 'changping', 'yanqing', 'fengtai', 'shijingshan', 'daxing', 'fangshan', 'miyun', 'mentougou', 'pinggu', 'dongcheng', 'xicheng']
+2019/06/28 21:34:02|INFO|10907|304 GET /province/%E5%8C%97%E4%BA%AC (127.0.0.1) 3.83ms
+2019/06/28 21:34:07|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:34:07|INFO|10907|b'{"username":"admin","city_cn":"\xe5\x8c\x97\xe4\xba\xac"}'
+2019/06/28 21:34:07|INFO|10907|('CN101010100',)
+2019/06/28 21:34:07|INFO|10907|200 POST /username/city/add (127.0.0.1) 33.00ms
+2019/06/28 21:34:13|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:34:13|INFO|10907|[('guangzhou',), ('panyu',), ('conghua',), ('zengcheng',), ('huadu',), ('liwan',), ('yuexiu',), ('haizhu',), ('tianhe',), ('baiyun',), ('huangpu',), ('nansha',), ('shaoguan',), ('ruyuan',), ('shixing',), ('wengyuan',), ('lechang',), ('renhua',), ('nanxiong',), ('xinfeng',), ('qujiang',), ('zhenjiang',), ('wujiang',), ('huizhou',), ('boluo',), ('huiyang',), ('huidong',), ('longmen',), ('huicheng',), ('meizhou',), ('xingning',), ('jiaoling',), ('dabu',), ('meijiang',), ('fengshun',), ('pingyuan',), ('wuhua',), ('meixian',), ('shantou',), ('chaoyang',), ('chenghai',), ('nanao',), ('longhu',), ('jinping',), ('haojiang',), ('chaonan',), ('shenzhen',), ('luohu',), ('futian',), ('nanshan',), ('baoan',), ('longgang',), ('yantian',), ('longhua',), ('pingshan',), ('zhuhai',), ('doumen',), ('jinwan',), ('xiangzhou',), ('foshan',), ('shunde',), ('sanshui',), ('nanhai',), ('gaoming',), ('chancheng',), ('zhaoqing',), ('guangning',), ('sihui',), ('duanzhou',), ('deqing',), ('huaiji',), ('fengkai',), ('gaoyao',), ('dinghu',), ('zhanjiang',), ('wuchuan',), ('leizhou',), ('xuwen',), ('lianjiang',), ('chikan',), ('suixi',), ('potou',), ('xiashan',), ('mazhang',), ('jiangmen',), ('kaiping',), ('xinhui',), ('enping',), ('taishan',), ('pengjiang',), ('heshan',), ('jianghai',), ('heyuan',), ('zijin',), ('lianping',), ('heping',), ('longchuan',), ('dongyuan',), ('yuancheng',), ('qingyuan',), ('liannan',), ('lianzhou',), ('lianshan',), ('yangshan',), ('fogang',), ('yingde',), ('qingxin',), ('qingcheng',), ('yunfu',), ('luoding',), ('xinxing',), ('yunan',), ('yuncheng',), ('yunan',), ('chaozhou',), ('raoping',), ('chaoan',), ('xiangqiao',), ('dongguan',), ('zhongshan',), ('yangjiang',), ('yangchun',), ('yangdong',), ('yangxi',), ('jiangcheng',), ('jieyang',), ('jiexi',), ('puning',), ('huilai',), ('jiedong',), ('rongcheng',), ('maoming',), ('gaozhou',), ('huazhou',), ('dianbai',), ('xinyi',), ('maonan',), ('shanwei',), ('haifeng',), ('lufeng',), ('luhe',)]
+2019/06/28 21:34:13|INFO|10907|['guangzhou', 'panyu', 'conghua', 'zengcheng', 'huadu', 'liwan', 'yuexiu', 'haizhu', 'tianhe', 'baiyun', 'huangpu', 'nansha', 'shaoguan', 'ruyuan', 'shixing', 'wengyuan', 'lechang', 'renhua', 'nanxiong', 'xinfeng', 'qujiang', 'zhenjiang', 'wujiang', 'huizhou', 'boluo', 'huiyang', 'huidong', 'longmen', 'huicheng', 'meizhou', 'xingning', 'jiaoling', 'dabu', 'meijiang', 'fengshun', 'pingyuan', 'wuhua', 'meixian', 'shantou', 'chaoyang', 'chenghai', 'nanao', 'longhu', 'jinping', 'haojiang', 'chaonan', 'shenzhen', 'luohu', 'futian', 'nanshan', 'baoan', 'longgang', 'yantian', 'longhua', 'pingshan', 'zhuhai', 'doumen', 'jinwan', 'xiangzhou', 'foshan', 'shunde', 'sanshui', 'nanhai', 'gaoming', 'chancheng', 'zhaoqing', 'guangning', 'sihui', 'duanzhou', 'deqing', 'huaiji', 'fengkai', 'gaoyao', 'dinghu', 'zhanjiang', 'wuchuan', 'leizhou', 'xuwen', 'lianjiang', 'chikan', 'suixi', 'potou', 'xiashan', 'mazhang', 'jiangmen', 'kaiping', 'xinhui', 'enping', 'taishan', 'pengjiang', 'heshan', 'jianghai', 'heyuan', 'zijin', 'lianping', 'heping', 'longchuan', 'dongyuan', 'yuancheng', 'qingyuan', 'liannan', 'lianzhou', 'lianshan', 'yangshan', 'fogang', 'yingde', 'qingxin', 'qingcheng', 'yunfu', 'luoding', 'xinxing', 'yunan', 'yuncheng', 'yunan', 'chaozhou', 'raoping', 'chaoan', 'xiangqiao', 'dongguan', 'zhongshan', 'yangjiang', 'yangchun', 'yangdong', 'yangxi', 'jiangcheng', 'jieyang', 'jiexi', 'puning', 'huilai', 'jiedong', 'rongcheng', 'maoming', 'gaozhou', 'huazhou', 'dianbai', 'xinyi', 'maonan', 'shanwei', 'haifeng', 'lufeng', 'luhe']
+2019/06/28 21:34:13|INFO|10907|200 GET /province/%E5%B9%BF%E4%B8%9C (127.0.0.1) 8.42ms
+2019/06/28 21:34:20|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:34:20|INFO|10907|b'{"username":"admin","city_cn":"\xe5\xb9\xbf\xe5\xb7\x9e"}'
+2019/06/28 21:34:20|INFO|10907|('CN101280101',)
+2019/06/28 21:34:20|INFO|10907|200 POST /username/city/add (127.0.0.1) 28.89ms
+2019/06/28 21:34:26|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:34:26|INFO|10907|b'{"username":"admin"}'
+2019/06/28 21:34:26|INFO|10907|[('北京',), ('广州',)]
+2019/06/28 21:34:26|INFO|10907|200 POST /username/city (127.0.0.1) 18.53ms
+2019/06/28 21:35:10|INFO|10907|remote ip: 127.0.0.1
+2019/06/28 21:35:10|INFO|10907|304 GET /tmp/map/now (127.0.0.1) 2.62ms
+2019/06/28 21:35:50|WARNING|10906|Caught signal 2
+2019/06/28 21:35:50|WARNING|10907|Caught signal 2
+2019/06/28 21:35:50|INFO|10907|Stopping http server
+2019/06/28 21:35:50|WARNING|10910|Caught signal 2
+2019/06/28 21:35:50|WARNING|10909|Caught signal 2
+2019/06/28 21:35:50|INFO|10910|Stopping http server
+2019/06/28 21:35:50|INFO|10909|Stopping http server
+2019/06/28 21:35:50|WARNING|10908|Caught signal 2
+2019/06/28 21:35:50|INFO|10908|Stopping http server
+2019/06/28 21:35:50|INFO|10906|child 0 (pid 10907) exited normally
+2019/06/28 21:35:50|INFO|10906|child 3 (pid 10910) exited normally
+2019/06/28 21:35:50|INFO|10906|child 2 (pid 10909) exited normally
+2019/06/28 21:35:50|INFO|10906|child 1 (pid 10908) exited normally
